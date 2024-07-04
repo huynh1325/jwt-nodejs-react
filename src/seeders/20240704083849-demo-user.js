@@ -8,7 +8,7 @@ module.exports = {
      * Example:
      * 
     */
-    await queryInterface.bulkInsert('users', [{
+    await queryInterface.bulkInsert('user', [{
       email: 'John Doe',
       password: '123',
       username: 'faker1'
