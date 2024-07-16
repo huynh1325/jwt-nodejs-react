@@ -1,6 +1,7 @@
 import userService from '../service/useService'
 
 const handleHelloWorld = (req, res) => {
+    console.log(req.body)
     return res.render("home.ejs")
 }
 
