@@ -3,7 +3,7 @@ import db from '../models/index'
 const getGroups = async () => {
     try {
         let data = await db.Group.findAll({
-            order: [['name', 'asc']]
+            order: [['name', 'DESC']]
         });
         return {
             EM: 'get group success',
