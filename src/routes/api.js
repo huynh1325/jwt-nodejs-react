@@ -1,4 +1,4 @@
-import express, { application } from "express"
+import express from "express"
 import apiController from '../controller/apiController'
 import userController from '../controller/userController'
 import groupController from '../controller/groupController'
