@@ -29,10 +29,11 @@ const testMiddleware = (req, res, next) => {
 // }
 
 const initApiRoutes = (app) => {
-    // router.all('*', checkUserJWT, checkUserPermission);
+    router.all('*', checkUserJWT, checkUserPermission);
 
     router.post("/register", apiController.handleRegister);
     router.post("/login", apiController.handleLogin);
+    router.get("/account", userController.getUserAccount);
 
     router.get("/user/read", userController.readFunc);
     router.post("/user/create", userController.createFunc);
